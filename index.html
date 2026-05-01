@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Osteria Nascosta — 路地裏に佇む隠れ家イタリアン。完全予約制・16席のみ。トスカーナ仕込みの本格料理をご堪能ください。">
+  <title>Osteria Nascosta | 隠れ家イタリアン 渋谷</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVIGATION
+       ======================================================== -->
+  <nav class="nav" id="nav" aria-label="メインナビゲーション">
+    <div class="nav__container">
+      <a href="#" class="nav__logo" aria-label="Osteria Nascosta トップへ">
+        <span class="nav__logo-main">Osteria</span>
+        <span class="nav__logo-sub">Nascosta</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#concept" class="nav__link">Concept</a></li>
+        <li><a href="#menu" class="nav__link">Menu</a></li>
+        <li><a href="#gallery" class="nav__link">Gallery</a></li>
+        <li><a href="#reservation" class="nav__link nav__link--cta">Reservation</a></li>
+      </ul>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ========================================================
+         HERO
+         ======================================================== -->
+    <section class="hero" id="hero" aria-label="ヒーロー">
+      <div class="hero__bg" id="heroBg" role="presentation"></div>
+      <div class="hero__overlay" role="presentation"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow animate-fade-up">Benvenuti a Osteria Nascosta</p>
+        <h1 class="hero__title animate-fade-up delay-1">
+          <span>喧騒を脱ぎ</span>
+          <em>イタリアを味わう</em>
+        </h1>
+        <p class="hero__subtitle animate-fade-up delay-2">
+          路地裏に佇む一軒家。厳選した食材と、職人の手が生み出す<br>
+          忘れられない一皿をお届けします。
+        </p>
+        <div class="hero__actions animate-fade-up delay-3">
+          <a href="#reservation" class="btn btn--primary">席を予約する</a>
+          <a href="#menu" class="btn btn--ghost">メニューを見る</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CONCEPT
+         ======================================================== -->
+    <section class="concept" id="concept" aria-labelledby="concept-title">
+      <div class="concept__container">
+
+        <div class="concept__text reveal">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title" id="concept-title">
+            静寂の中に宿る、<br>イタリアの魂
+          </h2>
+          <p class="concept__body">
+            2008年、オーナーシェフの田中 慶が北イタリアのトスカーナ地方で修業を積み、
+            帰国後に開いた小さなオステリア。喧騒から離れた路地裏に、ひっそりと灯る温かな光。
+          </p>
+          <p class="concept__body">
+            旬の国産食材と、イタリアから厳選して取り寄せるチーズ・ワイン・オリーブオイル。
+            余分なものをそぎ落とし、素材の声に耳を傾けた料理は、ここでしか味わえない一皿です。
+          </p>
+
+          <div class="concept__stats">
+            <div class="concept__stat">
+              <span class="concept__stat-num">16</span>
+              <span class="concept__stat-label">席のみ</span>
+            </div>
+            <div class="concept__stat">
+              <span class="concept__stat-num">2008</span>
+              <span class="concept__stat-label">創業</span>
+            </div>
+            <div class="concept__stat">
+              <span class="concept__stat-num">完全</span>
+              <span class="concept__stat-label">予約制</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept__image reveal delay-1">
+          <img
+            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=85"
+            alt="シェフが丁寧に料理を仕上げる手元"
+            class="concept__img"
+            loading="lazy"
+          >
+          <div class="concept__badge">
+            <span class="concept__badge-text">Toscana</span>
+            <span class="concept__badge-sub">Recipe</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         MENU — BENTO GRID
+         ======================================================== -->
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <div class="menu__header reveal">
+        <p class="section-eyebrow">À la carte</p>
+        <h2 class="section-title menu__title" id="menu-title">本日のメニュー</h2>
+        <p class="menu__desc">季節の食材を活かした、シェフの厳選メニュー</p>
+      </div>
+
+      <div class="menu__bento" role="list">
+
+        <!-- Antipasto — large (2 cols) -->
+        <article class="bento-card bento-card--large reveal" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85"
+            alt="季節野菜のバーニャカウダ"
+            class="bento-card__img"
+            loading="lazy"
+          >
+          <div class="bento-card__overlay">
+            <p class="bento-card__category">Antipasto</p>
+            <h3 class="bento-card__title">季節野菜の<br>バーニャカウダ</h3>
+            <p class="bento-card__price">¥ 1,800</p>
+          </div>
+        </article>
+
+        <!-- Wine — tall (2 rows) -->
+        <article class="bento-card bento-card--tall reveal delay-1" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=85"
+            alt="トスカーナ産赤ワイン"
+            class="bento-card__img"
+            loading="lazy"
+          >
+          <div class="bento-card__overlay">
+            <p class="bento-card__category">Vino</p>
+            <h3 class="bento-card__title">トスカーナ産<br>赤ワイン</h3>
+            <p class="bento-card__price">¥ 1,200 / glass</p>
+          </div>
+        </article>
+
+        <!-- Pasta -->
+        <article class="bento-card reveal delay-1" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=600&q=85"
+            alt="カルボナーラクラシコ"
+            class="bento-card__img"
+            loading="lazy"
+          >
+          <div class="bento-card__overlay">
+            <p class="bento-card__category">Primo Piatto</p>
+            <h3 class="bento-card__title">カルボナーラ<br>クラシコ</h3>
+            <p class="bento-card__price">¥ 2,400</p>
+          </div>
+        </article>
+
+        <!-- Risotto -->
+        <article class="bento-card reveal delay-2" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=600&q=85"
+            alt="トリュフ香るリゾット"
+            class="bento-card__img"
+            loading="lazy"
+          >
+          <div class="bento-card__overlay">
+            <p class="bento-card__category">Primo Piatto</p>
+            <h3 class="bento-card__title">トリュフ香る<br>リゾット</h3>
+            <p class="bento-card__price">¥ 3,200</p>
+          </div>
+        </article>
+
+        <!-- Bistecca — wide (2 cols) -->
+        <article class="bento-card bento-card--wide reveal delay-2" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=85"
+            alt="ビステッカ・アッラ・フィオレンティーナ"
+            class="bento-card__img"
+            loading="lazy"
+          >
+          <div class="bento-card__overlay">
+            <p class="bento-card__category">Secondo Piatto</p>
+            <h3 class="bento-card__title">ビステッカ・<br>アッラ・フィオレンティーナ</h3>
+            <p class="bento-card__price">¥ 6,800</p>
+          </div>
+        </article>
+
+        <!-- Tiramisu -->
+        <article class="bento-card reveal delay-3" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=600&q=85"
+            alt="自家製ティラミス"
+            class="bento-card__img"
+            loading="lazy"
+          >
+          <div class="bento-card__overlay">
+            <p class="bento-card__category">Dolce</p>
+            <h3 class="bento-card__title">自家製<br>ティラミス</h3>
+            <p class="bento-card__price">¥ 1,200</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         GALLERY
+         ======================================================== -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="gallery__header reveal">
+        <p class="section-eyebrow">Atmosphere</p>
+        <h2 class="section-title gallery__title" id="gallery-title">店内の雰囲気</h2>
+      </div>
+
+      <div class="gallery__grid" role="list">
+        <div class="gallery__item gallery__item--tall reveal" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=85"
+            alt="温かな照明が灯るレストラン内観"
+            loading="lazy"
+          >
+        </div>
+        <div class="gallery__item gallery__item--wide reveal delay-1" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=85"
+            alt="落ち着いた雰囲気のダイニングスペース"
+            loading="lazy"
+          >
+        </div>
+        <div class="gallery__item reveal delay-1" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?auto=format&fit=crop&w=700&q=85"
+            alt="丁寧に盛り付けられた料理"
+            loading="lazy"
+          >
+        </div>
+        <div class="gallery__item reveal delay-2" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=85"
+            alt="キャンドルが揺れるテーブル席"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         RESERVATION
+         ======================================================== -->
+    <section class="reservation" id="reservation" aria-labelledby="reservation-title">
+      <div class="reservation__container">
+
+        <div class="reservation__header reveal">
+          <p class="section-eyebrow reservation__eyebrow">Reserve a Table</p>
+          <h2 class="section-title reservation__title" id="reservation-title">ご予約</h2>
+          <p class="reservation__desc">
+            完全予約制・定員16名。特別な夜のご予約をお待ちしております。
+          </p>
+        </div>
+
+        <form
+          class="reservation__form reveal delay-1"
+          id="reservationForm"
+          novalidate
+          aria-label="予約フォーム"
+        >
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="name">
+                お名前 <span class="form__required" aria-label="必須">*</span>
+              </label>
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="田中 太郎"
+                autocomplete="name"
+                aria-describedby="nameError"
+              >
+              <span class="form__error" id="nameError" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="email">
+                メールアドレス <span class="form__required" aria-label="必須">*</span>
+              </label>
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@mail.com"
+                autocomplete="email"
+                aria-describedby="emailError"
+              >
+              <span class="form__error" id="emailError" role="alert" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form__row form__row--3">
+            <div class="form__group">
+              <label class="form__label" for="date">
+                ご来店日 <span class="form__required" aria-label="必須">*</span>
+              </label>
+              <input
+                class="form__input"
+                type="date"
+                id="date"
+                name="date"
+                aria-describedby="dateError"
+              >
+              <span class="form__error" id="dateError" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="time">
+                ご来店時間 <span class="form__required" aria-label="必須">*</span>
+              </label>
+              <select class="form__input form__select" id="time" name="time" aria-describedby="timeError">
+                <option value="">選択してください</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+              </select>
+              <span class="form__error" id="timeError" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="guests">
+                人数 <span class="form__required" aria-label="必須">*</span>
+              </label>
+              <select class="form__input form__select" id="guests" name="guests" aria-describedby="guestsError">
+                <option value="">選択してください</option>
+                <option value="1">1名</option>
+                <option value="2">2名</option>
+                <option value="3">3名</option>
+                <option value="4">4名</option>
+                <option value="5">5名以上（要相談）</option>
+              </select>
+              <span class="form__error" id="guestsError" role="alert" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="message">ご要望・アレルギー情報</label>
+            <textarea
+              class="form__input form__textarea"
+              id="message"
+              name="message"
+              placeholder="記念日のご利用、アレルギーがある場合はこちらにご記入ください。"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--submit" id="submitBtn">
+            <span class="btn__text">予約リクエストを送る</span>
+            <span class="btn__loading" aria-hidden="true">送信中...</span>
+          </button>
+
+          <div class="form__success" id="formSuccess" role="alert" aria-live="polite">
+            <span class="form__success-icon" aria-hidden="true">✓</span>
+            ご予約リクエストを受け付けました。24時間以内にメールにてご連絡いたします。
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+
+      <div class="footer__brand">
+        <p class="footer__logo">Osteria Nascosta</p>
+        <p class="footer__tagline">隠れ家イタリアン</p>
+        <p class="footer__copy-mobile">&copy; 2024 Osteria Nascosta</p>
+      </div>
+
+      <nav class="footer__info" aria-label="フッターナビゲーション">
+        <div class="footer__col">
+          <h4 class="footer__heading">Access</h4>
+          <address>
+            <p>東京都渋谷区神山町 3-12</p>
+            <p>代々木公園駅 徒歩5分</p>
+          </address>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Hours</h4>
+          <p>火〜日 18:00 – 22:30 <abbr title="ラストオーダー">L.O.</abbr></p>
+          <p>月曜定休</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Contact</h4>
+          <p><a href="tel:0312345678" class="footer__link">03-1234-5678</a></p>
+          <p><a href="mailto:info@osteria-nascosta.jp" class="footer__link">info@osteria-nascosta.jp</a></p>
+        </div>
+      </nav>
+
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Osteria Nascosta. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
