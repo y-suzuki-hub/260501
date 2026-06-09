@@ -321,11 +321,9 @@ abbr { text-decoration: none; border-bottom: 1px dotted; }
    ============================================================ */
 .hero {
   position: relative;
-  height: 100svh;
-  min-height: 680px;
+  min-height: 100svh;
   display: flex;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
 
@@ -349,9 +347,10 @@ abbr { text-decoration: none; border-bottom: 1px dotted; }
 .hero__content {
   position: relative;
   z-index: 2;
-  text-align: center;
-  padding: 0 var(--gutter);
-  max-width: 820px;
+  text-align: left;
+  padding: var(--sp-xl) var(--gutter);
+  max-width: 660px;
+  margin-left: clamp(1.5rem, 8vw, 7rem);
 }
 
 .hero__eyebrow {
@@ -366,16 +365,16 @@ abbr { text-decoration: none; border-bottom: 1px dotted; }
 .hero__title {
   font-family: var(--font-serif);
   font-size: clamp(2.6rem, 7vw, 5.2rem);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.12;
   color: var(--c-ivory);
   margin-bottom: var(--sp-md);
 }
 .hero__title span { display: block; }
 .hero__title em {
-  font-style: italic;
   color: var(--c-gold-light);
   position: relative;
+  white-space: nowrap;
 }
 .hero__title em::after {
   content: '';
@@ -398,7 +397,7 @@ abbr { text-decoration: none; border-bottom: 1px dotted; }
 .hero__actions {
   display: flex;
   gap: var(--sp-sm);
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -938,7 +937,7 @@ abbr { text-decoration: none; border-bottom: 1px dotted; }
    RESPONSIVE — SMALL MOBILE (≤ 480px)
    ============================================================ */
 @media (max-width: 480px) {
-  .hero__actions { flex-direction: column; align-items: center; }
+  .hero__actions { flex-direction: column; align-items: flex-start; }
   .btn { max-width: 260px; width: 100%; }
 
   .concept__stats { flex-wrap: wrap; gap: var(--sp-md); }
